@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import './App.css'
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+// Pages
+import Home from './pages/Home'
+import AboutMe from './pages/AboutMe'
+import Projects from './pages/Projects'
+import FastOrder from './pages/Projects/FastOrder'
+
+// Components
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/AboutMe' element={<AboutMe/>} />
+          <Route path='/Projects' element={<Projects/>} />
+          <Route path='/Projects/FastOrder' element={<FastOrder/>} />
+          if () {
+            
+          }
+        </Routes>
+      </Router>
+      <Footer/>
+    </>
   );
 }
 
-export default App;
+export default App
