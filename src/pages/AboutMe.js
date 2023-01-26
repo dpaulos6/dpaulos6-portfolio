@@ -81,7 +81,7 @@ const AboutMe = () => {
               </div>
               <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-base font-medium text-gray-500">Other languages</dt>
-                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">English <p className="inline-flex text-sm text-gray-500">B1 Level</p></dd>
+                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">English <p className="inline-flex text-sm text-gray-500">B2 Level</p></dd>
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 {/* <dt className="text-base font-medium text-gray-500">Linktree</dt>
@@ -94,10 +94,21 @@ const AboutMe = () => {
                     <li className="flex items-center justify-between py-3 pl-3 pr-4 text-base">
                       <div className="flex w-0 flex-1 items-center">
                         <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                        <span className="ml-2 w-0 flex-1 truncate">curriculum_vitae.pdf</span>
+                        <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv_portuguese.pdf</span>
                       </div>
-                      <div className="ml-4 flex-shrink-0">
-                        <a href="../public/teste.pdf" className="font-medium text-blue-600 hover:text-blue-500" download>
+                      <div className="ml-4 flex-shrink-0 hidden">
+                        <a href="../public/" className="font-medium text-blue-600 hover:text-blue-500" download>
+                          Download
+                        </a>
+                      </div>
+                    </li>
+                    <li className="flex items-center justify-between py-3 pl-3 pr-4 text-base">
+                      <div className="flex w-0 flex-1 items-center">
+                        <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                        <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv_english.pdf</span>
+                      </div>
+                      <div className="ml-4 flex-shrink-0 hidden">
+                        <a href="../public/" className="font-medium text-blue-600 hover:text-blue-500" download>
                           Download
                         </a>
                       </div>
