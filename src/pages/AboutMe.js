@@ -42,14 +42,14 @@ const AboutMe = () => {
         </main>
       </div>
 
-      <div className="max-w-8xl">
+      {/* <div className="max-w-8xl">
         <div className="bg-slate-100/75 py-20">
           <video className="mx-auto" width="80%" name="media" controls>
             <source src="/video.mp4" type="video/mp4;"/>
             Your browser does not support the video tag.
           </video>
         </div>
-      </div>
+      </div> */}
 
       <div className="py-16">
         <div className="overflow-hidden lg:mx-40 mx-auto bg-white shadow sm:rounded-lg col-span-2">
