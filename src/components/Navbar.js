@@ -7,7 +7,6 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { BsTriangleFill } from 'react-icons/bs';
 
 const resources = [
   {
@@ -21,8 +20,7 @@ const resources = [
 const socialMedias = [
   { id: 1, name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/dpaulos6/' },
   { id: 2, name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/dpaulos6/' },
-  { id: 3, name: 'Github', icon: FaGithub, href: 'https://github.com/dpaulos6' },
-  { id: 4, name: 'Vercel', icon: BsTriangleFill, href: 'https://github.com/dpaulos6' }
+  { id: 3, name: 'Github', icon: FaGithub, href: 'https://github.com/dpaulos6' }
 ]
 
 function classNames(...classes) {
