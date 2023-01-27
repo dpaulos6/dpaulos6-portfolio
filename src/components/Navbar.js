@@ -22,7 +22,7 @@ const resources = [
 const socialMedias = [
   { id: 1, name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/dpaulos6/' },
   { id: 2, name: 'LinkedIn', icon: FaLinkedin, href: 'https://www.linkedin.com/in/dpaulos6/' },
-  { id: 3, name: 'Github', icon: FaGithub, href: 'https://github.com/diogopaulos' },
+  { id: 3, name: 'Github', icon: FaGithub, href: 'https://github.com/dpaulos6' },
 ]
 
 function classNames(...classes) {
