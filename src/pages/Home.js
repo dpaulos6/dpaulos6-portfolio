@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation"
 const Home = () => {
   return (
     <>
-      <div className="h-[600px] max-h-[600px] overflow-hidden relative"> {/* Short introduction */}
+      <div className="h-[650px] max-h-[650px] overflow-hidden relative"> {/* Short introduction */}
         <div className="flex h-full">
           <div className="mx-auto my-auto text-center w-max">
             <p className="text-2xl md:text-4xl lg:text-6xl home-title">
