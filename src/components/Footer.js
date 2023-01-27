@@ -13,7 +13,7 @@ const Footer = () =>{
       <div className=" bg-gray-700">
         <div className="max-w-xs sm:max-w-lg mx-auto text-white py-20">
             <div className="text-center h-14 sm:h-[70px]">
-                <h3 className="text-xl sm:text-3xl">
+                {/* <h3 className="text-xl sm:text-3xl">
                   <TypeAnimation
                     sequence={[
                       'Made by Diogo Paulos, using React and Tailwind.',
@@ -25,7 +25,8 @@ const Footer = () =>{
                     repeat={Infinity}
                     speed="60"
                   />
-                </h3>
+                </h3> */}
+                <code className="text-xl sm:text-3xl">Made by Diogo Paulos, using React and Tailwind.</code>
             </div>
             <div className="mt-8 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
               <div className="mx-auto inline-flex">
