@@ -15,7 +15,7 @@ const Home = () => {
                 sequence={[
                   'UI/UX Designer',
                   5000,
-                  'Web/Software Developer',
+                  'Software Developer',
                   5000,
                 ]}
                 wrapper="code"
