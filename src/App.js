@@ -1,7 +1,6 @@
-import React from 'react'
+import { React, useEffect, useState, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './App.css'
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 // Pages
 import Home from './pages/Home'
@@ -12,6 +11,7 @@ import FastOrder from './pages/Projects/FastOrder'
 // Components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Cursor from './components/Cursor';
 
 function App() {
   return (
@@ -23,12 +23,10 @@ function App() {
           <Route path='/AboutMe' element={<AboutMe/>} />
           <Route path='/Projects' element={<Projects/>} />
           <Route path='/Projects/FastOrder' element={<FastOrder/>} />
-          if () {
-            
-          }
         </Routes>
       </Router>
       <Footer/>
+      <Cursor/>
     </>
   );
 }
