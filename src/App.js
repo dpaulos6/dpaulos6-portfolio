@@ -12,6 +12,8 @@ import FastOrder from './pages/Projects/FastOrder'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Cursor from './components/Cursor';
+import Tabs from "./components/Tabs";
+import styled from "styled-components";
 
 function App() {
   return (
@@ -27,6 +29,11 @@ function App() {
       </Router>
       <Footer/>
       <Cursor/>
+
+      {/* <div>
+        <Tabs />
+      </div> */}
+
     </>
   );
 }

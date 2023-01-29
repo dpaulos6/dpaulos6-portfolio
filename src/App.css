@@ -241,3 +241,35 @@
   position: absolute;
   z-index: 100;
 }
+
+
+/* Cool hover effect */
+.sloby-nav {
+  padding: 15px 5px;
+  text-align: center;
+  position: relative;
+  overflow:hidden;
+  transition: .3s;
+}
+
+.sloby-nav:after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #f7f7f7;
+}
+.sloby-nav:nth-of-type(1):after {
+  right: 0;
+  left: auto;
+}
+.sloby-nav:hover {
+  cursor: pointer;
+}
+.sloby-nav:hover:after {
+  width: 100%;
+  left: 0;
+}
