@@ -1,10 +1,20 @@
 import React from "react"
 import { TypeAnimation } from "react-type-animation"
 
+document.addEventListener("mousemove", circleshake)
+function circleshake(e){
+  document.querySelectorAll(".circle").forEach(function(move){
+    var moving_value = move.getAttribute("data-value")
+    var x = (e.clientX * moving_value)/250
+    var y = (e.clientY * moving_value)/250
+    move.style.transform = "transformX(" + x + ") translateY(" + y + ")"
+  })
+}
+
 const Home = () => {
   return (
     <>
-      <div className="h-[650px] max-h-[650px] overflow-hidden relative"> {/* Short introduction */}
+      <div className="h-[650px] max-h-[650px] overflow-hidden relative select-none">
         <div className="flex h-full">
           <div className="mx-auto my-auto text-center w-max">
             <p className="text-2xl md:text-4xl lg:text-6xl home-title">
@@ -26,14 +36,24 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="circle-1"><span className="sr-only">Circle 1 - 512x512</span></div>
-        <div className="circle-2"><span className="sr-only">Circle 2 - 512x512</span></div>
-        <div className="circle-3"><span className="sr-only">Circle 3 - 175x175</span></div>
-        <div className="circle-4"><span className="sr-only">Circle 4 - 125x125</span></div>
-        <div className="circle-5"><span className="sr-only">Circle 5 - 60x60</span></div>
+        <div className="circle circle-1">
+          <span className="sr-only">Circle 1 - 512x512</span>
+        </div>
+        <div className="circle circle-2">
+          <span className="sr-only">Circle 2 - 512x512</span>
+        </div>
+        <div className="circle circle-3">
+          <span className="sr-only">Circle 3 - 175x175</span>
+        </div>
+        <div className="circle circle-4">
+          <span className="sr-only">Circle 4 - 125x125</span>
+        </div>
+        <div className="circle circle-5">
+          <span className="sr-only">Circle 5 - 60x60</span>
+        </div>
       </div>
     </>
   );
 };
-  
+
 export default Home;

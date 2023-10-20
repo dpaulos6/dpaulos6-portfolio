@@ -8,6 +8,13 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
+const nav = [
+  { name: 'Home', link: '/' },
+  { name: 'About Me', link: '/AboutMe' },
+  { name: 'Testing', link: '/Testing' },
+
+]
+
 const resources = [
   {
     name: 'FastOrder',
@@ -30,7 +37,7 @@ function classNames(...classes) {
 const Navbar = () =>{
 
   return(
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-white select-none">
       <div className="mx-auto px-6 border-b-2 border-gray-100">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -48,12 +55,12 @@ const Navbar = () =>{
             </Popover.Button>
           </div>
           <Popover.Group as="nav" className="hidden space-x-6 md:flex hover-effects">
-            <a href="/" className="text-lg font-medium text-gray-500 hover:text-gray-900 border-b-2 border-transparent hover:border-b-gray-300 duration-300 py-4 px-2">
-              Home
-            </a>
-            <a href="/AboutMe" className="text-lg font-medium text-gray-500 hover:text-gray-900 border-b-2 border-transparent hover:border-b-gray-300 duration-300 py-4 px-2">
-              About Me
-            </a>
+            
+            {nav.map((item) => (
+              <a href={item.link} className="text-lg font-medium text-gray-500 hover:text-gray-900 border-b-2 border-transparent hover:border-b-gray-300 duration-300 py-4 px-2">
+                {item.name}
+              </a>
+            ))}
 
             <Popover className="relative">
               {({ open }) => (

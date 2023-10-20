@@ -22,6 +22,7 @@
     "parallax-controller": "^1.6.0",
     "react": "^18.2.0",
     "react-carousel3": "^1.0.0",
+    "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.4",
     "react-icons": "^4.7.1",

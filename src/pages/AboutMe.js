@@ -1,5 +1,5 @@
 import React from "react";
-import { PaperClipIcon } from '@heroicons/react/20/solid'
+import { PaperClipIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 
 function age() {
   var dob = new Date(2003, 5, 17)
@@ -28,7 +28,6 @@ const AboutMe = () => {
                     I enjoy learning frameworks and play around, such as{' '}
                     <code className="text-blue-700"><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></code> and{' '}
                     <code className="text-blue-700"><a href="https://nextjs.org/" target="_blank" rel="noreferrer">Next.js</a></code>,{' '}
-                    <code className="text-blue-700"><a href="https://laravel.com/" target="_blank" rel="noreferrer">Laravel</a></code>,{' '}
                     <code className="text-blue-700"><a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap</a></code> or {' '}
                     <code className="text-blue-700"><a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">Tailwind.css</a></code>.
                   </p>
@@ -51,7 +50,7 @@ const AboutMe = () => {
         </div>
       </div> */}
 
-      <div className="py-16">
+      <div className="py-16 select-none">
         <div className="overflow-hidden lg:mx-40 mx-auto bg-white shadow sm:rounded-lg col-span-2">
           <div className="px-4 py-5 sm:px-6">
             <h3 className="text-lg font-medium leading-6 text-gray-900">Aditional Information</h3>
@@ -96,8 +95,9 @@ const AboutMe = () => {
                         <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
                         <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv_portuguese.pdf</span>
                       </div>
-                      <div className="ml-4 flex-shrink-0 hidden">
-                        <a href="../public/" className="font-medium text-blue-600 hover:text-blue-500" download>
+                      <div className="ml-4 flex-shrink-0">
+                        <a href="../public/teste.pdf" className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center" download>
+                          <ArrowDownTrayIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
                           Download
                         </a>
                       </div>
@@ -107,8 +107,9 @@ const AboutMe = () => {
                         <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
                         <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv_english.pdf</span>
                       </div>
-                      <div className="ml-4 flex-shrink-0 hidden">
-                        <a href="../public/" className="font-medium text-blue-600 hover:text-blue-500" download>
+                      <div className="ml-4 flex-shrink-0">
+                        <a href="../public/teste.pdf" className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center" download>
+                          <ArrowDownTrayIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
                           Download
                         </a>
                       </div>

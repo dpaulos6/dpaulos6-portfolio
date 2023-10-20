@@ -10,7 +10,7 @@ const socialMedias = [
 const Footer = () =>{
   return(
     <>
-      <div className=" bg-gray-700">
+      <div className=" bg-gray-700 select-none">
         <div className="max-w-xs sm:max-w-lg mx-auto text-white py-20">
             <div className="text-center h-14 sm:h-[70px]">
                 {/* <h3 className="text-xl sm:text-3xl">
