@@ -1,5 +1,5 @@
 import React from "react";
-import { PaperClipIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid'
+  import { PaperClipIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 
 function age() {
   var dob = new Date(2003, 5, 17)

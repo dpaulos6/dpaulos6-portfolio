@@ -156,7 +156,7 @@
   height: 175px;
   background-color: #FAFAFA;
   border-radius: 100%;
-  bottom: 125px;
+  bottom: 25px;
   left: 550px;
   z-index: -1;
   transition: 1.5s all ease-in-out;
@@ -178,8 +178,8 @@
   height: 60px;
   background-color: #f1f0f0;
   border-radius: 100%;
-  bottom: 125px;
-  right: 250px;
+  bottom: 75px;
+  right: 225px;
   z-index: -1;
   transition: 1.5s all ease-in-out;
 }

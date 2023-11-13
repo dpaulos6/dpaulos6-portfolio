@@ -4,6 +4,7 @@ import './App.css'
 
 // Pages
 import Home from './pages/Home'
+import HomeTwo from './pages/HomeTwo'
 import AboutMe from './pages/AboutMe'
 import Testing from './pages/Testing'
 import Projects from './pages/Projects'
@@ -20,6 +21,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/HomeTwo' element={<HomeTwo/>} />
           <Route path='/AboutMe' element={<AboutMe/>} />
           <Route path='/Testing' element={<Testing/>} />
           <Route path='/Projects' element={<Projects/>} />

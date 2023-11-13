@@ -14,7 +14,7 @@ function circleshake(e){
 const Home = () => {
   return (
     <>
-      <div className="h-[650px] max-h-[650px] overflow-hidden relative select-none">
+      <div className="h-[600px] max-h-[600px] overflow-hidden relative select-none">
         <div className="flex h-full">
           <div className="mx-auto my-auto text-center w-max">
             <p className="text-2xl md:text-4xl lg:text-6xl home-title">
@@ -51,6 +51,10 @@ const Home = () => {
         <div className="circle circle-5">
           <span className="sr-only">Circle 5 - 60x60</span>
         </div>
+      </div>
+
+      <div className='relative py-16'>
+        
       </div>
     </>
   );
