@@ -10,9 +10,9 @@ import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 const nav = [
   { name: 'Home', link: '/' },
-  { name: 'Home Two', link: '/HomeTwo' },
+  // { name: 'Home Two', link: '/HomeTwo' },
   { name: 'About Me', link: '/AboutMe' },
-  { name: 'Testing', link: '/Testing' },
+  // { name: 'Testing', link: '/Testing' },
 ]
 
 const resources = [
