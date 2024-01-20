@@ -1,15 +1,16 @@
 import React from "react"
 import { TypeAnimation } from "react-type-animation"
 
-document.addEventListener("mousemove", circleshake)
-function circleshake(e){
-  document.querySelectorAll(".circle").forEach(function(move){
-    var moving_value = move.getAttribute("data-value")
-    var x = (e.clientX * moving_value)/250
-    var y = (e.clientY * moving_value)/250
-    move.style.transform = "transformX(" + x + ") translateY(" + y + ")"
-  })
+document.addEventListener("mousemove", circleshake);
+function circleshake(e) {
+  document.querySelectorAll(".circle").forEach(function (move) {
+    var moving_value = move.getAttribute("data-value");
+    var x = (e.clientX * moving_value) / 250;
+    var y = (e.clientY * moving_value) / 250;
+    move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+  });
 }
+
 
 const Home = () => {
   return (
@@ -23,9 +24,7 @@ const Home = () => {
             <p className="text-lg sm:text-xl md:text-2xl lg:text-4xl home-title">
               <TypeAnimation
                 sequence={[
-                  'UI/UX Designer',
-                  5000,
-                  'Software Developer',
+                  'Web Developer',
                   5000,
                 ]}
                 wrapper="code"

@@ -1,4 +1,3 @@
-import { TypeAnimation } from "react-type-animation"
 import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 const socialMedias = [
@@ -13,26 +12,13 @@ const Footer = () =>{
       <div className=" bg-gray-700 select-none">
         <div className="max-w-xs sm:max-w-lg mx-auto text-white py-20">
             <div className="text-center h-14 sm:h-[70px]">
-                {/* <h3 className="text-xl sm:text-3xl">
-                  <TypeAnimation
-                    sequence={[
-                      'Made by Diogo Paulos, using React and Tailwind.',
-                      5000,
-                      '',
-                    ]}
-                    wrapper="code"
-                    cursor={true}
-                    repeat={Infinity}
-                    speed="60"
-                  />
-                </h3> */}
                 <code className="text-xl sm:text-3xl">Made by Diogo Paulos, using React and Tailwind.</code>
             </div>
             <div className="mt-8 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
               <div className="mx-auto inline-flex">
                 {socialMedias.map((item) => (
                   <span className="px-2">
-                    <a href={item.href} className="inline-flex hover:text-gray-300" rel="noreferrer">
+                    <a href={item.href} className="inline-flex link-modern-light hover:text-gray-300" rel="noreferrer">
                       <item.icon className="my-auto mr-1"/>
                       {item.name}
                     </a>

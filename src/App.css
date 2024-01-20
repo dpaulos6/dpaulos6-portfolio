@@ -272,3 +272,38 @@
   width: 100%;
   left: 0;
 }
+
+.link-modern{
+  padding: 0 .35rem;
+  margin: 0 -.25rem;
+  background-color: #219bff5a;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.link-modern:hover {
+  color: #21b9ff;
+}
+
+.link-modern-light{
+  padding: 0.15rem .35rem;
+  margin: -.15rem -.35rem;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.link-modern-light:hover {
+  background-color: #219bff1c;
+  color: rgb(59 130 246);
+}
+
+.link-modern-bg{
+  padding: 0.15rem .35rem;
+  margin: -.15rem -.35rem;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.link-modern-bg:hover {
+  background-color: #219bff1c;
+}

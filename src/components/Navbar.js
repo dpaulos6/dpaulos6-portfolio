@@ -3,6 +3,7 @@ import { Popover, Transition } from '@headlessui/react'
 import {
   Bars3Icon,
   LifebuoyIcon,
+  LightBulbIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -21,6 +22,12 @@ const resources = [
     description: "A Restaurant's digital food menu with a management website.",
     href: '/Projects/FastOrder',
     icon: LifebuoyIcon,
+  },
+  {
+    name: 'Bulb',
+    description: "A simple and modern photo gallery.",
+    href: '/Projects/Bulb',
+    icon: LightBulbIcon,
   }
 ]
 
@@ -114,10 +121,10 @@ const Navbar = () =>{
                             <ul className="mt-4 space-y-1">
                               {socialMedias.map((item) => (
                                 <a href={item.href} className="font-medium">
-                                  <li key={item.id} className="truncate text-base">
-                                    <div className="inline-flex text-gray-700 hover:text-gray-900">
+                                  <li key={item.id} className="truncate text-base px-2">
+                                    <div className="inline-flex link-modern-light text-gray-700 hover:text-gray-900">
                                       <item.icon className="my-auto"/>
-                                      <span className="mx-2 my-0">{item.name}</span>
+                                      <span className="ml-2 my-0">{item.name}</span>
                                     </div>
                                   </li>
                                 </a>

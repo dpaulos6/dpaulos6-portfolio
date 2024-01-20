@@ -26,10 +26,10 @@ const AboutMe = () => {
                   <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
                     I love to write and learn code, specially trying out new things and learning usefull programming languages.
                     I enjoy learning frameworks and play around, such as{' '}
-                    <code className="text-blue-700"><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></code> and{' '}
-                    <code className="text-blue-700"><a href="https://nextjs.org/" target="_blank" rel="noreferrer">Next.js</a></code>,{' '}
-                    <code className="text-blue-700"><a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap</a></code> or {' '}
-                    <code className="text-blue-700"><a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">Tailwind.css</a></code>.
+                    <code className="link-modern-light text-blue-500"><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></code> and{' '}
+                    <code className="link-modern-light text-blue-500"><a href="https://nextjs.org/" target="_blank" rel="noreferrer">Next.js</a></code>,{' '}
+                    <code className="link-modern-light text-blue-500"><a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap</a></code> or {' '}
+                    <code className="link-modern-light text-blue-500"><a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">Tailwind.css</a></code>.
                   </p>
                   <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
                     I also love to play videogames with my friends, listen and produce music, edit videos or photos, and much more.
@@ -68,11 +68,11 @@ const AboutMe = () => {
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-base font-medium text-gray-500">Email address</dt>
-                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0 hover:text-blue-600"><a href="mailto: dpaulos6@outlook.com">dpaulos6@outlook.com</a></dd>
+                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0 hover:text-blue-600"><a href="mailto: dpaulos6@outlook.com" className="duration-150">dpaulos6@outlook.com</a></dd>
               </div>
               <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-base font-medium text-gray-500">Phone</dt>
-                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">+351 915 734 267</dd>
+                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">+351 931 460 299</dd>
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-base font-medium text-gray-500">Native language</dt>
@@ -80,7 +80,7 @@ const AboutMe = () => {
               </div>
               <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-base font-medium text-gray-500">Other languages</dt>
-                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">English <p className="inline-flex text-sm text-gray-500">B2 Level</p></dd>
+                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">English <p className="inline-flex text-sm text-gray-500">B1 Level</p></dd>
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 {/* <dt className="text-base font-medium text-gray-500">Linktree</dt>
@@ -93,25 +93,17 @@ const AboutMe = () => {
                     <li className="flex items-center justify-between py-3 pl-3 pr-4 text-base">
                       <div className="flex w-0 flex-1 items-center">
                         <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                        <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv_portuguese.pdf</span>
+                        <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv.pdf</span>
                       </div>
                       <div className="ml-4 flex-shrink-0">
-                        <a href="../public/teste.pdf" className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center" download>
+                        {/* <a href="/public/dpauloscv.pdf" className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center link-modern-bg" download='dpaulos6-cv.pdf'>
                           <ArrowDownTrayIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
                           Download
-                        </a>
-                      </div>
-                    </li>
-                    <li className="flex items-center justify-between py-3 pl-3 pr-4 text-base">
-                      <div className="flex w-0 flex-1 items-center">
-                        <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                        <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv_english.pdf</span>
-                      </div>
-                      <div className="ml-4 flex-shrink-0">
-                        <a href="../public/teste.pdf" className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center" download>
+                        </a> */}
+                        <span className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center link-modern-bg cursor-pointer">
                           <ArrowDownTrayIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
                           Download
-                        </a>
+                        </span>
                       </div>
                     </li>
                   </ul>
