@@ -1,5 +1,3 @@
-import { TypeAnimation } from "react-type-animation"
-
 export default function Home() {
   return (
     <>
@@ -26,10 +24,6 @@ export default function Home() {
         <div className="circle circle-5">
           <span className="sr-only">Circle 5 - 60x60</span>
         </div>
-      </div>
-
-      <div className='relative py-16'>
-        
       </div>
     </>
   );

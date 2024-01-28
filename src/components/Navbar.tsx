@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <div className="inline-flex hover:scale-110 transition ease-in-out duration-300">
               <a href='/'>
-                <img src='public/dp6/dp6-logo.svg' className="max-h-16" alt='dp6 Logo'/>
+                <img src='dp6/dp6-logo.svg' className="max-h-16" alt='dp6 Logo'/>
                 <span className="sr-only text-lg font-medium text-gray-800 mx-3 my-auto">Diogo Paulos Portfolio</span>  
               </a>
             </div>

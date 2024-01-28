@@ -62,7 +62,7 @@
 @layer base {
   * {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 450;
+    font-weight: 500;
     @apply border-border;
   }
   .logo{
