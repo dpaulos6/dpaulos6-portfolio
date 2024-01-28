@@ -1,4 +1,4 @@
-const FastOrder = () =>{
+export default function Bulb() {
   return(
     <>
       <div className="w-full h-max p-40">
@@ -7,5 +7,3 @@ const FastOrder = () =>{
     </>
   )
 }
-
-export default FastOrder

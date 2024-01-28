@@ -1,10 +1,8 @@
-import { React } from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import './App.css'
+import './global.css'
 
 // Pages
-import Home from './pages/Home'
-import HomeTwo from './pages/HomeTwo'
+import Home from './pages/Home.tsx'
 import AboutMe from './pages/AboutMe'
 import Testing from './pages/Testing'
 import Projects from './pages/Projects'
@@ -14,14 +12,13 @@ import FastOrder from './pages/Projects/FastOrder'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
-function App() {
+export default function App() {
   return (
     <>
       <Navbar/>
       <Router>
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/HomeTwo' element={<HomeTwo/>} />
           <Route path='/AboutMe' element={<AboutMe/>} />
           <Route path='/Testing' element={<Testing/>} />
           <Route path='/Projects' element={<Projects/>} />
@@ -29,10 +26,6 @@ function App() {
         </Routes>
       </Router>
       <Footer/>
-
-      {/* <Cursor/> */}
     </>
   );
 }
-
-export default App

@@ -1,22 +1,39 @@
-import { Fragment, React } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import React, { Fragment } from 'react';
+import { Popover, Transition } from '@headlessui/react';
 import {
   Bars3Icon,
   LifebuoyIcon,
   LightBulbIcon,
   XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa'
+} from '@heroicons/react/24/outline';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
-const nav = [
+interface NavItem {
+  name: string;
+  link: string;
+}
+
+interface Resource {
+  name: string;
+  description: string;
+  href: string;
+  icon: React.ElementType;
+}
+
+interface SocialMedia {
+  id: number;
+  name: string;
+  icon: React.ElementType;
+  href: string;
+}
+
+const nav: NavItem[] = [
   { name: 'Home', link: '/' },
-  // { name: 'Home Two', link: '/HomeTwo' },
   { name: 'About Me', link: '/AboutMe' },
-  // { name: 'Testing', link: '/Testing' },
-]
+];
 
-const resources = [
+const resources: Resource[] = [
   {
     name: 'FastOrder',
     description: "A Restaurant's digital food menu with a management website.",
@@ -25,32 +42,31 @@ const resources = [
   },
   {
     name: 'Bulb',
-    description: "A simple and modern photo gallery.",
+    description: 'A simple and modern photo gallery.',
     href: '/Projects/Bulb',
     icon: LightBulbIcon,
-  }
-]
+  },
+];
 
-const socialMedias = [
+const socialMedias: SocialMedia[] = [
   { id: 1, name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/dpaulos6/' },
   { id: 2, name: 'LinkedIn', icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/dpaulos6/' },
   { id: 3, name: 'Github', icon: FaGithub, href: 'https://github.com/dpaulos6' }
-]
+];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
 }
 
-const Navbar = () =>{
-
-  return(
+const Navbar: React.FC = () => {
+  return (
     <Popover className="relative bg-white select-none">
       <div className="mx-auto px-6 border-b-2 border-gray-100">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <div className="inline-flex hover:scale-110 transition ease-in-out duration-300">
               <a href='/'>
-                <img src='/dp6/dp6-logo.svg' className="max-h-16" alt='dp6 Logo'/>
+                <img src='public/dp6/dp6-logo.svg' className="max-h-16" alt='dp6 Logo'/>
                 <span className="sr-only text-lg font-medium text-gray-800 mx-3 my-auto">Diogo Paulos Portfolio</span>  
               </a>
             </div>
@@ -121,7 +137,7 @@ const Navbar = () =>{
                             <ul className="mt-4 space-y-1">
                               {socialMedias.map((item) => (
                                 <a href={item.href} className="font-medium">
-                                  <li key={item.id} className="truncate text-base px-2">
+                                  <li key={item.id} className="truncate text-base px-2 py-0.5">
                                     <div className="inline-flex link-modern-light text-gray-700 hover:text-gray-900">
                                       <item.icon className="my-auto"/>
                                       <span className="ml-2 my-0">{item.name}</span>
@@ -200,7 +216,7 @@ const Navbar = () =>{
         </Popover.Panel>
       </Transition>
     </Popover>
-  )
-}
+  );
+};
 
 export default Navbar;

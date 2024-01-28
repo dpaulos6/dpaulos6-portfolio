@@ -1,5 +1,4 @@
-import React from "react";
-  import { PaperClipIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid'
+import { PaperClipIcon, ArrowDownTrayIcon } from '@heroicons/react/20/solid'
 
 function age() {
   var dob = new Date(2003, 5, 17)
@@ -8,7 +7,7 @@ function age() {
   return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
-const AboutMe = () => {
+export default function AboutMe() {
   return (
     <>
       <div className="isolate bg-white">
@@ -16,8 +15,8 @@ const AboutMe = () => {
           <div className="relative py-16">
             <div className="lg:mx-40">
               <div className="grid lg:grid-cols-3 md:gap-4 lg:gap-8 max-w-6xl mx-auto my-8">
-                <div className="bg-gray-400/20 w-auto my-auto lg:mx-2 mx-auto custom-shape-div p-1">
-                  <img src="/dp6/dpaulos6.jpg" className="h-auto max-h-80 lg:max-h-96 mx-auto rounded-full shadow-lg shadow-gray-500/60 custom-shape-img" alt="dpaulos6"></img>
+                <div className="bg-gray-400/20 w-auto my-auto lg:mx-2 mx-auto custom-shape-div p-1 rounded-full">
+                  <img src="/dp6/dpaulos6.jpg" className="h-auto max-h-80 lg:max-h-96 mx-auto shadow-lg shadow-gray-500/60 rounded-full" alt="dpaulos6"></img>
                 </div>
                 <div className="mx-10 sm:mx-20 md:mx-32 my-5 lg:my-auto lg:mx-2 lg:col-span-2">
                   <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
@@ -116,5 +115,3 @@ const AboutMe = () => {
     </>
   );
 };
-  
-export default AboutMe;
