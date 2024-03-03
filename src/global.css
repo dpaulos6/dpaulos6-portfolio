@@ -288,3 +288,14 @@
 .link-modern-bg:hover {
   background-color: #219bff1c;
 }
+
+.link-modern-bg-disabled{
+  padding: 0.15rem .35rem;
+  margin: -.15rem -.35rem;
+  border-radius: 5px;
+  transition: all .3s ease-in-out;
+}
+
+.link-modern-bg-disabled:hover {
+  background-color: #5e5e5e1c;
+}

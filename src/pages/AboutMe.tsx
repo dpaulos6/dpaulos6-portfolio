@@ -22,16 +22,16 @@ export default function AboutMe() {
                   <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
                     My name is Diogo Paulos, I'm {age()} years old and I'm from Portugal.
                   </p>
-                  <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
-                    I love to write and learn code, specially trying out new things and learning usefull programming languages.
-                    I enjoy learning frameworks and play around, such as{' '}
-                    <code className="link-modern-light text-blue-500"><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></code> and{' '}
-                    <code className="link-modern-light text-blue-500"><a href="https://nextjs.org/" target="_blank" rel="noreferrer">Next.js</a></code>,{' '}
-                    <code className="link-modern-light text-blue-500"><a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap</a></code> or {' '}
+                  <span className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
+                    I love to write and learn code, specially trying out new things and learning useful programming languages.
+                    I enjoy learning frameworks and recently i've been loving{' '}
+                    <code className="link-modern-light text-blue-500"><a href="https://vitejs.dev/" target="_blank" rel="noreferrer">Vite</a></code> with{' '}
+                    <code className="link-modern-light text-blue-500"><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></code> +{' '}
+                    <code className="link-modern-light text-blue-500"><a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">TypeScript</a></code> and {' '}
                     <code className="link-modern-light text-blue-500"><a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">Tailwind.css</a></code>.
-                  </p>
+                  </span>
                   <p className="text-lg md:text-xl lg:text-2xl text-justify text-gray-800 my-3">
-                    I also love to play videogames with my friends, listen and produce music, edit videos or photos, and much more.
+                    I also love to play video-games with my friends, listen and produce music, edit videos or photos, and much more.
                   </p>
                 </div>
               </div>
@@ -40,19 +40,10 @@ export default function AboutMe() {
         </main>
       </div>
 
-      {/* <div className="max-w-8xl">
-        <div className="bg-slate-100/75 py-20">
-          <video className="mx-auto" width="80%" name="media" controls>
-            <source src="/video.mp4" type="video/mp4;"/>
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div> */}
-
       <div className="py-16 select-none">
         <div className="overflow-hidden lg:mx-40 mx-auto bg-white shadow sm:rounded-lg col-span-2">
           <div className="px-4 py-5 sm:px-6">
-            <h3 className="text-lg font-medium leading-6 text-gray-900">Aditional Information</h3>
+            <h3 className="text-lg font-medium leading-6 text-gray-900">Additional Information</h3>
             <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
           </div>
           <div className="border-t border-gray-200">
@@ -82,26 +73,19 @@ export default function AboutMe() {
                 <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">English <p className="inline-flex text-sm text-gray-500">B1 Level</p></dd>
               </div>
               <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                {/* <dt className="text-base font-medium text-gray-500">Linktree</dt>
-                <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0 hover:text-blue-600"><a href="https://www.linktr.ee/dpaulos6" target="_blank" rel="noreferrer">linktree/dpaulos6</a></dd>
-              </div>
-              <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"> */}
                 <dt className="text-base font-medium text-gray-500">Attachments</dt>
                 <dd className="mt-1 text-base text-gray-900 sm:col-span-2 sm:mt-0">
                   <ul className="divide-y divide-gray-200 rounded-md border border-gray-200">
                     <li className="flex items-center justify-between py-3 pl-3 pr-4 text-base">
-                      <div className="flex w-0 flex-1 items-center">
+                      <div className="flex w-full flex- items-center">
                         <PaperClipIcon className="h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
-                        <span className="ml-2 w-0 flex-1 truncate">dpaulos6-cv.pdf</span>
+                        <span className="ml-2 w-fit truncate transition-all">dpaulos6-cv.pdf</span>
+                        <span className='ml-4 text-gray-600 text-sm'>Soon will be available to preview or download.</span>
                       </div>
                       <div className="ml-4 flex-shrink-0">
-                        {/* <a href="/public/dpauloscv.pdf" className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center link-modern-bg" download='dpaulos6-cv.pdf'>
+                        <span className="font-medium text-gray-600 hover:text-gray-500 inline-flex gap-2 items-center link-modern-bg-disabled cursor-pointer">
                           <ArrowDownTrayIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
-                          Download
-                        </a> */}
-                        <span className="font-medium text-blue-600 hover:text-blue-500 inline-flex gap-2 items-center link-modern-bg cursor-pointer">
-                          <ArrowDownTrayIcon className="h-5 w-5 flex-shrink-0" aria-hidden="true" />
-                          Download
+                          Unavailable
                         </span>
                       </div>
                     </li>
