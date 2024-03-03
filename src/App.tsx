@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import './global.css'
+import { Analytics } from "@vercel/analytics/react"
 
 // Pages
 import Home from './pages/Home.tsx'
@@ -13,6 +14,7 @@ import Footer from './components/Footer'
 export default function App() {
   return (
     <>
+      <Analytics/>
       <Navbar/>
       <Router>
         <Routes>
